@@ -1,18 +1,26 @@
 <html>
-<head>
-<meta charset="utf-8"/>
-<title>Exercício Prático (Tabuada) -</title>
-</head>
-<body>
-<script>
-for (i=1; i<=100; i++){
-window.document.write('<table border="2">');
-for( j=1; j<=10; j++){
-window.document.write("<tr>");
-window.document.write("<td width='130'>"+i+" x "+j+" = " ,j*i, "</td>");
-window.document.write("</tr>");
+ <head>
+<title>Exercício Prático (Tabuada) - </title> 
+  <meta charset="utf-8"/>
+<style>
+body{
+font-family: Arial;
 }
-window.document.write(</table><br><br>");
-</script>
-</body>
-</html>
+</style>
+ </head>
+ <body>
+ <h1>Tabuada Multiplicação</h1>
+  <script>
+   for(i=1;i<=100;i++){
+   document.write('<table border="1">');
+    for(j=1;j<=10;j++){
+     var res=i*j;
+     document.write("<tr>");
+     document.write("<td>"+i+"*"+j+"="+res+"<br></td>");
+     document.write("</tr>");
+    }
+    document.write("</table><br><br>");
+   }
+   </script>
+ </body>
+ </html>
